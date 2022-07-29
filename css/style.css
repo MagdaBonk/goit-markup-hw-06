@@ -94,6 +94,8 @@ header svg {
     font-weight: 500;
     line-height: 1.38;
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .contacts {
