@@ -844,3 +844,7 @@ address {
     letter-spacing: 0.03em;
     padding: 49px 45px 49px 24px;
 }
+
+.contact {
+    min-height: 338px;
+}
