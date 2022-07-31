@@ -227,6 +227,11 @@ header svg {
     cursor: pointer;
 }
 
+.exit:hover {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+}
+
 .is-hidden {
     opacity: 0;
     visibility: hidden;
