@@ -87,6 +87,112 @@
                         <div class="backdrop is-hidden" data-modal>
                             <div class="modal">
                                 <button class="exit" data-modal-close>X</button>
+                                <form
+                                    class="modal-form"
+                                    name="form_register"
+                                    autocomplete="on"
+                                >
+                                    <div class="modal-form-contacts">
+                                        <p class="modal-form-header">
+                                            Zostaw swoje dane w formularzu
+                                            poniżej
+                                        </p>
+                                        <label class="modal-form-label">
+                                            <p>Imie</p>
+                                            <svg
+                                                class="modal-form-svg"
+                                                width="18"
+                                                height="18"
+                                            >
+                                                <use
+                                                    href="images/icons.svg#icon-person"
+                                                ></use>
+                                            </svg>
+                                            <input
+                                                class="modal-form-input"
+                                                type="text"
+                                                name="name"
+                                                required
+                                            />
+                                        </label>
+
+                                        <label class="modal-form-label">
+                                            <p>Telefon</p>
+                                            <svg
+                                                class="modal-form-svg"
+                                                width="18"
+                                                height="18"
+                                            >
+                                                <use
+                                                    href="images/icons.svg#icon-phone-modal"
+                                                ></use>
+                                            </svg>
+                                            <input
+                                                class="modal-form-input"
+                                                type="tel"
+                                                name="phone"
+                                                required
+                                            />
+                                        </label>
+
+                                        <label class="modal-form-label">
+                                            <p>Email</p>
+                                            <svg
+                                                class="modal-form-svg"
+                                                width="18"
+                                                height="18"
+                                                required
+                                            >
+                                                <use
+                                                    href="images/icons.svg#icon-email-modal"
+                                                ></use>
+                                            </svg>
+                                            <input
+                                                class="modal-form-input"
+                                                type="email"
+                                                name="email"
+                                                required
+                                            />
+                                        </label>
+                                        <label class="modal-form-label">
+                                            <p>Komentarz</p>
+                                            <textarea
+                                                class="modal-form-textarea"
+                                                name="feedback"
+                                                rows="5"
+                                                placeholder="Wprowadź tekst"
+                                            ></textarea>
+                                        </label>
+                                        <label class="modal-form-box"
+                                            ><input
+                                                class="form-box"
+                                                type="checkbox"
+                                                name="checkbox-accept"
+                                                required
+                                            />
+                                            <svg class="icon-checked">
+                                                <use
+                                                    href="images/icons.svg#icon-vector"
+                                                ></use>
+                                            </svg>
+                                            <p>
+                                                Oświadczam iż akceptuję
+                                                <a href="#">Regulamin</a> i
+                                                <a href="#"
+                                                    >Politykę Prywatności</a
+                                                >.
+                                            </p>
+                                        </label>
+                                        <div class="modal-form-button">
+                                            <button
+                                                class="modal-form-submit"
+                                                type="submit"
+                                            >
+                                                Wyślij
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -95,7 +201,7 @@
 
             <section class="section features">
                 <div class="container">
-                    <ul class="list advantages">
+                    <ul class="advantages">
                         <li class="advantages-list">
                             <div class="advantages-svg">
                                 <svg width="70" height="70">
@@ -519,6 +625,28 @@
                                 </svg>
                             </li>
                         </ul>
+                    </div>
+                    <div class="newsletter">
+                        <p class="newsletter-header">
+                            Zapisz się do newslettera
+                        </p>
+                        <form name="newsletter" autocomplete="on">
+                            <input
+                                class="newsletter-email"
+                                type="email"
+                                name="newsletter-email"
+                                placeholder="E-mail"
+                                required
+                            />
+                            <input
+                                class="newsletter-submit"
+                                type="submit"
+                                name="newsletter-sumbit"
+                                value="Zapisz się     "
+                            /><svg class="icon-send">
+                                <use href="images/icons.svg#icon-send"></use>
+                            </svg>
+                        </form>
                     </div>
                 </div>
             </div>

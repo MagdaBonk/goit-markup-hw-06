@@ -201,6 +201,7 @@ header svg {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 3;
 }
 
 .modal {
@@ -236,12 +237,144 @@ header svg {
     transform: scaleX(0);
 }
 
+.modal-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-form-contacts {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.modal-form-header {
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 12px;
+}
+
+.modal-form-label {
+    position: relative;
+    padding-bottom: 10px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    text-align: left;
+}
+
+.modal-form-label p {
+    padding-bottom: 4px;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: #757575;
+}
+
+.modal-form-svg {
+    position: absolute;
+    bottom: 22px;
+    left: 12px;
+}
+
+.modal-form-input {
+    width: 448px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 12px 12px 12px 42px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-label:focus-within {
+    fill: #2196f3;
+}
+
+.modal-form-label input:focus,
+.modal-form-textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+.modal-form-textarea {
+    width: 448px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 12px 16px;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-agreement {
+    line-height: 24px;
+    letter-spacing: var(--letter-spacing);
+    color: #757575;
+}
+
+.modal-form-agreement a {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: var(--letter-spacing);
+}
+
+.modal-form-button {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.modal-form-submit {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    padding: 10px 76px;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: var(--letter-spacing-big);
+    border-radius: 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.modal-form-box {
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.form-box {
+    display: flex;
+    place-content: center;
+    margin: 0;
+    margin-right: 6px;
+    background-color: var(--white-color);
+    border: 1px solid;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.form-box:checked {
+    border-color: var(--accent-color);
+}
+
+.icon-checked {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    fill: var(--white-color);
+}
+
 .advantages {
     list-style-type: none;
     display: flex;
     gap: 30px;
     padding-left: 15px;
     padding-right: 15px;
+    margin-left: -20px;
 }
 
 .advantages-svg {
@@ -528,6 +661,69 @@ address {
     background-color: var(--accent-color);
     transition: color 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.newsletter {
+    padding-left: 70px;
+    padding-top: 70px;
+}
+
+.newsletter-header {
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: var(--letter-spacing);
+    text-transform: uppercase;
+    color: var(--white-color);
+    padding-bottom: 20px;
+}
+.newsletter form {
+    position: relative;
+    display: inline-flex;
+    gap: 24px;
+}
+
+.newsletter-email {
+    width: 358px;
+    height: 50px;
+    padding-left: 22px;
+    background-color: #2f303a;
+    color: var(--white-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    transition: transform 250ms ease-in, box-shadow 250ms ease-in;
+}
+.newsletter-email::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+.newsletter-email:focus {
+    outline: none;
+    border: 2px solid;
+    border-color: var(--accent-color);
+}
+
+.newsletter-submit {
+    width: 200px;
+    height: 50px;
+    background-color: var(--accent-color);
+    border: none;
+    border-radius: 4px;
+    color: var(--white-color);
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: var(--letter-spacing-big);
+    transition: transform 750ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+}
+
+.icon-send {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    fill: var(--white-color);
+    right: 30px;
+    top: 10px;
 }
 
 /* portfolio */
