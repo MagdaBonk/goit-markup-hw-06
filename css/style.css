@@ -717,8 +717,8 @@ address {
     width: 24px;
     height: 24px;
     fill: var(--white-color);
-    right: 4%;
-    top: 26%;
+    right: 20px;
+    top: 10px;
     transition: transform 1000ms ease-out;
 }
 
