@@ -362,16 +362,6 @@ header svg {
     border-radius: 4px;
     cursor: pointer;
 }
-.form-box:checked {
-    border-color: var(--accent-color);
-}
-
-.icon-checked {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    fill: var(--white-color);
-}
 
 .advantages {
     list-style-type: none;
@@ -727,8 +717,9 @@ address {
     width: 24px;
     height: 24px;
     fill: var(--white-color);
-    right: 30px;
-    top: 10px;
+    right: 4%;
+    top: 26%;
+    transition: transform 1000ms ease-out;
 }
 
 /* portfolio */
