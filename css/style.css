@@ -225,6 +225,8 @@ header svg {
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     cursor: pointer;
+    padding: 0;
+    line-height: 29px;
 }
 
 .exit:hover {
@@ -367,9 +369,6 @@ header svg {
     list-style-type: none;
     display: flex;
     gap: 30px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: -20px;
 }
 
 .advantages-svg {
@@ -381,6 +380,10 @@ header svg {
     background: var(--background-of-elements);
     border-radius: 4px;
     margin-bottom: 30px;
+}
+
+.advantages-list {
+    width: 100%;
 }
 
 .advantages-title {
@@ -422,6 +425,7 @@ header svg {
 
 .work-list li {
     position: relative;
+    flex-grow: 1;
 }
 
 figure {
@@ -437,9 +441,14 @@ figure {
     text-transform: uppercase;
     color: var(--white-color);
     padding-top: 27px;
-    width: 100%;
+    width: 370px;
     height: 70px;
     bottom: 4px;
+}
+
+.what-we-do img {
+    width: 100%;
+    height: auto;
 }
 
 .team {
@@ -717,8 +726,8 @@ address {
     width: 24px;
     height: 24px;
     fill: var(--white-color);
-    right: 20px;
-    top: 10px;
+    right: 15px;
+    top: 15px;
     transition: transform 1000ms ease-out;
 }
 
