@@ -270,7 +270,7 @@ header svg {
     text-align: left;
 }
 
-.modal-form-label p {
+.modal-form-label span {
     padding-bottom: 4px;
     font-size: 12px;
     line-height: 14px;
@@ -726,8 +726,8 @@ address {
     width: 24px;
     height: 24px;
     fill: var(--white-color);
-    right: 15px;
-    top: 15px;
+    right: 4%;
+    top: 26%;
     transition: transform 1000ms ease-out;
 }
 
