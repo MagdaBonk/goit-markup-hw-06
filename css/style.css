@@ -316,6 +316,7 @@ header svg {
 }
 
 .modal-form-agreement {
+    padding-top: 2px;
     line-height: 24px;
     letter-spacing: var(--letter-spacing);
     color: #757575;
@@ -729,6 +730,10 @@ address {
     right: 4%;
     top: 26%;
     transition: transform 1000ms ease-out;
+}
+
+.newsletter-submit:hover + .icon-send {
+    transform: translate(20px, -10px) scale(0.9);
 }
 
 /* portfolio */
