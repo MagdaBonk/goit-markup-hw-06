@@ -732,10 +732,6 @@ address {
     transition: transform 1000ms ease-out;
 }
 
-.newsletter-submit:hover + .icon-send {
-    transform: translate(20px, -10px) scale(0.9);
-}
-
 /* portfolio */
 
 .button-portfolio-all {
